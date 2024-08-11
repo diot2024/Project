@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    padding-top: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean font for readability */
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px; /* Increased container width for better content layout */
+    margin-top: 20px; /* Added margin top for spacing */
+}
+
+/* Weather card styling */
+.weather-card {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Adjusted max-width for better display */
+    margin: 20px auto; /* Centered cards with spacing */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Ensure the background color is set */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow for 3D effect */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.weather-card .icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.weather-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Larger font size for better readability */
+}
+
+.weather-card p {
+    font-size: 18px;
+    color: #333; /* Darker text color for better readability */
+}
+
+/* Specific styling for temperature and humidity */
+.temperature {
+    color: #ff6384; /* Light red color for temperature */
+}
+
+.humidity {
+    color: #36a2eb; /* Light blue color for humidity */
+}
+
+/* Weather chart styling */
+.weather-chart {
+    height: 150px; /* Increased height for better chart visibility */
+    margin-top: 20px;
+}
+
+/* Logout button styling */
+.logout-button {
+    margin-bottom: 20px;
+}
+
+/* Time interval buttons styling */
+.text-center.mt-4.mb-4 button {
+    margin: 5px; /* Spacing between buttons */
+}
+
+/* Sensor data table styling */
+.table-responsive {
+    margin-top: 30px; /* Spacing above the table */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Collapsed borders for a cleaner look */
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 10px; /* Padding inside table cells */
+}
+
+.table thead th {
+    background-color: #f1f1f1; /* Light background for table header */
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Light gray background for odd rows */
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6; /* Border around the table */
+}
+
+/* Additional styles based on thresholds */
+.high-temperature {
+    background-color: #ffccd3 !important; /* Light red background for high temperature */
+}
+
+.high-humidity {
+    background-color: #cfd8dc !important; /* Light blue-grey background for high humidity */
+}
